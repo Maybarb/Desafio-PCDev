@@ -18,6 +18,7 @@ namespace RolCursos.Models
             Id = Guid.NewGuid();
         }
 
+       
 
     }
 }

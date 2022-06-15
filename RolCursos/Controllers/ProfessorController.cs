@@ -20,7 +20,7 @@ namespace RolCursos.Controllers
             Professor professor = new Professor
             {
                 NomeProfessor = professorDto.NomeProfessor,
-                Curso = professorDto.Curso,
+                
             };
             _context.TabelaDeProfessores.Add(professor);
             _context.SaveChanges();
@@ -60,7 +60,7 @@ namespace RolCursos.Controllers
                 return NotFound();
             }
             professor.NomeProfessor = professorDto.NomeProfessor;
-            professor.Curso = professorDto.Curso;
+            
             _context.SaveChanges();
             return NoContent();
         }
